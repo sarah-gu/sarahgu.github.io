@@ -3,6 +3,7 @@ import Image from 'next/image';
 import { Inter } from '@next/font/google';
 import styles from '../styles/Home.module.css';
 import { Landing } from "../components/Landing";
+import { Projects } from "../components/Projects"; 
 
 
 export default function Home() {
@@ -18,6 +19,7 @@ export default function Home() {
         <main>
           
           <Landing/>
+          <Projects/>
         </main>
       </div>
     </>

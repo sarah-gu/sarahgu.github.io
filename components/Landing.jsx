@@ -1,4 +1,6 @@
 import { useState } from "react";
+import Image from "next/image";
+import PFP from "../public/sarahgu.jpeg";
 
 export const Landing = () => {
 	return (
@@ -16,7 +18,7 @@ export const Landing = () => {
           >
             Sarah Gu
           </h1>
-          <div>div</div>     <p
+          <p
             data-aos="zoom-y-out"
             data-aos-delay="150"
             className="text-lg text-gray-600 md:text-xl dark:text-gray-400"
@@ -24,7 +26,16 @@ export const Landing = () => {
             Computer Scientist.
           </p>
         </div>
-        
+        <div
+          data-aos="fade-left"
+          className="relative flex flex-col justify-center w-full max-w-2xl overflow-hidden rounded-lg shadow-lg md:rounded-xl"
+        >
+          <Image
+            src={PFP}
+            className="rounded-t-lg md:rounded-t-xl"
+            alt="Mac window bar"
+          />
+        </div>
       </div>
     </section>
 	); 
